@@ -4,7 +4,11 @@ let data = [];
 
 module.exports = {
   add: function (name, content) {
-    data.push({ name: name, content: content });
+    data.push({
+      name: name,
+      content: content,
+      id: Math.floor(Math.random() * 10),
+    });
   },
   list: function () {
     return _.cloneDeep(data);
