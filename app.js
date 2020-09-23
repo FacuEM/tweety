@@ -25,9 +25,6 @@ app.use("/special/", function (req, res, next) {
   console.log(chalk.blue("llegaste a un área especial"));
   next();
 });
-app.get("/", function (req, res) {
-  res.send("Hello World");
-});
 
 app.listen(3000, function () {
   console.log("Servidor corriendo en el puerto 3000");
